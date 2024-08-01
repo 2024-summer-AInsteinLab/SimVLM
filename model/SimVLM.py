@@ -13,8 +13,6 @@ from model.torch_transformer import encoder,decoder
 from torch.nn.init import xavier_uniform_
 from typing import Optional,Union
 
-import pandas as pd
-
 
 def clone(module,N):
     '''copy the given module N times'''
