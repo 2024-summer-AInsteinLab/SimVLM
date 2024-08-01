@@ -34,7 +34,7 @@ class LayerNorm(nn.Module):
         return self.a_2*(x-mean)/(std+self.eps)+self.b_2
 
 class Transformer(nn.Module):
-    def __init__(self,d_model=512,heads=8,enc_depth=8,dec_depth=8,d_ff=1024,dropout=0.1)::
+    def __init__(self,d_model=512,heads=8,enc_depth=8,dec_depth=8,d_ff=1024,dropout=0.1):
         super(Transformer,self).__init__()
         c=copy.deepcopy
         attn=MultiHeadedAttention(heads,d_model)
